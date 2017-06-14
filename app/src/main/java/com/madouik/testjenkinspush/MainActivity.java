@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     // new commit test jenkins
 
-    THIS IS ERROR
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
