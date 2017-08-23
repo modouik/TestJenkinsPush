@@ -11,13 +11,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
 
     // new commit test jenkins
 
-
+    Object object ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-Object object = new Object();
+
 
 
         Log.e(TAG, "onCreate: ", new Throwable() );
@@ -38,6 +39,9 @@ Object object = new Object();
                         .setAction("Action", null).show();
             }
         });
+
+
+        Toast.makeText(this,object.toString(),Toast.LENGTH_LONG).show();
     }
 
     private static final String TAG = "MainActivity";
